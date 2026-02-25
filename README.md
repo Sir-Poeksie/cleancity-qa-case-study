@@ -1,4 +1,4 @@
-# 🧪 CleanCity — QA Case Study (Web Platform)
+# CleanCity - QA Case Study (Web Platform)
 
 **Role:** QA Engineer (Manual + Automation)
 **Scope:** Web-based application
