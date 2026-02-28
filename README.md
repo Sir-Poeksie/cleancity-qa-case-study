@@ -1,70 +1,63 @@
-# CleanCity - QA Case Study (Web Platform)
+# CleanCity — QA Case Study (Web Platform)
 
-**Role:** QA Engineer (Manual + Automation)
-**Scope:** Web-based application
-**Focus:** Functional testing • Regression • Bug reporting • Test automation
+**Role:** QA Engineer (Manual + Automation)  
+**System Type:** Web-based application  
+**Focus:** Functional testing • Regression • Defect reporting • Risk-based automation  
 
 ## Overview
 
-This repository contains a QA case study for CleanCity, a web-based application used as a test subject to demonstrate professional QA execution.
+This repository presents a **QA case study** demonstrating end-to-end quality assurance execution against a real-world-style web application.
 
-The purpose of this project is to showcase:
+The objective of this case study is to showcase **how QA decisions are made and communicated**, including:
 
-- Manual testing approach
-- Test planning and execution
-- Clear defect reporting
-- Risk-based automation decisions
-> This is a QA artefact, not an application development project.
+- Structured manual testing
+- Exploratory testing and risk discovery
+- Clear, actionable defect reporting
+- Judicious use of test automation
+- Professional QA reporting to stakeholders
+
+> This repository represents **QA execution**, not application development.
 
 ## Testing Scope
 
 ### In Scope
-
-* Functional testing
-* Regression testing
-* Exploratory testing
-* Cross-browser testing (Chrome, Firefox, Edge)
-* UI-level automation (critical paths)
+- Functional testing
+- Exploratory testing
+- Regression testing
+- Cross-browser validation (Chrome, Firefox, Edge)
+- UI-level automation for critical paths
 
 ### Out of Scope
+- Backend/API testing
+- Performance testing
+- Security testing
+- CI/CD integration
+- Mobile testing
 
-* Backend testing
-* Performance testing
-* Security testing
-* CI/CD integration
-* Mobile testing
+## QA Strategy & Approach
 
-## QA Approach
+Testing followed a **risk-based strategy**, prioritizing:
 
-Testing was conducted using a risk-based strategy, focusing on:
+- Core user journeys
+- Data validation and persistence
+- State transitions and UI feedback
+- Error handling and usability risks
 
-- Core user flows
-- Data validation
-- State changes
-- Error handling
-- Usability risks
+Manual testing was conducted first to establish:
+- System understanding
+- Defect baselines
+- Risk concentration areas
 
-Manual testing was executed first to establish system understanding and defect baselines.
-Automation was introduced selectively for stable, high-value user journeys.
+Automation was introduced selectively for **stable, high-value flows** where regression risk justified the maintenance cost.
 
 ## Repository Structure
 ```
 cleancity-qa-case-study/
-├── app/                     # Original application (unmodified)
+├── app/ # System Under Test (unmodified)
 ├── tests/
-│   ├── manual/
-│   │   ├── test-plan.md
-│   │   ├── test-cases.md
-│   │   ├── exploratory-notes.md
-│   │   └── defect-report.md
-│   └── automation/
-│       ├── cypress/
-│       ├── jest/
-│       └── automation-scope.md
-├── reports/
-│   ├── test-execution-report.md
-│   ├── defect-summary.md
-│   └── qa-summary.md
+│ ├── manual/ # Test plan, cases, defects, exploration
+│ └── automation/ # Cypress and Jest suites
+├── reports/ # Execution summaries and QA sign-off
 └── README.md
 ```
 
@@ -72,71 +65,77 @@ cleancity-qa-case-study/
 
 Manual testing focused on:
 
-- User input validation
-- Data persistence
-- Filtering and state updates
-- Error messaging and edge cases
+- Input validation and boundary conditions
+- Data persistence and state updates
+- Filtering and conditional rendering
+- Error messaging and negative scenarios
 - Basic accessibility and usability signals
 
-Test cases were designed to be:
-
-- Clear
+All test cases were designed to be:
 - Reproducible
 - Traceable to observed behavior
+- Written for clarity and execution efficiency
+
+---
 
 ## Defect Reporting
 
-Defects were logged with:
-
+Defects were documented with emphasis on:
 - Clear reproduction steps
-- Expected vs actual behavior
-- Severity and impact assessment
+- Expected vs. actual behavior
+- Severity and user impact
 
-The goal was clarity and actionability, not volume.
+The intent was **actionability**, not defect volume.
+
+---
 
 ## Test Automation
 
 Automation was implemented to validate:
-
 - Critical user flows
 - Regression-prone functionality
 
 ### Tooling
+- **Cypress** — End-to-end UI validation
+- **Jest** — Component and logic-level checks
 
-- **Cypress** — End-to-end testing
-- **Jest** — Component-level validation
-
-Automation intentionally avoids full coverage in favor of:
-
+Automation scope was intentionally constrained to balance:
 - Stability
-- Maintenance cost awareness
+- Maintenance cost
 - Execution value
 
-See `automation-scope.md` for rationale.
+Rationale is documented in `tests/automation/automation-scope.md`.
+
+---
 
 ## Reporting & Outcomes
 
 Testing concluded with:
+- Test execution reporting
+- Defect summaries
+- QA sign-off highlighting risks and recommendations
 
-- Test execution report
-- Defect summary
-- QA sign-off summary highlighting risks and recommendations
+These artefacts demonstrate how QA outcomes are communicated to **product teams and stakeholders**.
 
-These artefacts reflect how QA results are communicated to **stakeholders and product teams**.
+---
 
 ## Notes
 
-- This project represents **QA execution only**
-- The application under test was not authored by the QA engineer
-- All findings are based on observed system behavior
+- This repository represents **QA execution only**
+- The application under test was not authored or modified
+- All findings are based solely on observed system behavior
+
+---
 
 ## Author
 
-**Mpumelelo Theophilas Nxazonke**
-<br/>QA Engineer • SDET
-<br/>South Africa
+**Mpumelelo Theophilas Nxazonke**  
+QA Engineer • SDET  
+South Africa  
+
+---
 
 ## License
 
-MIT License
+MIT License  
 Educational and portfolio use only
