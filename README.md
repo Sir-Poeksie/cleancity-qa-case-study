@@ -1,4 +1,4 @@
-# CleanCity — QA Case Study (Web Platform)
+# CleanCity - End-to-End QA Case Study (Manual & Automation)
 
 **Role:** QA Engineer (Manual + Automation)  
 **System Type:** Web-based application  
@@ -6,9 +6,9 @@
 
 ## Overview
 
-This repository presents a **QA case study** demonstrating end-to-end quality assurance execution against a real-world-style web application.
+This repository presents an end-to-end QA case study demonstrating structured quality assurance execution against a web-based application.
 
-The objective of this case study is to showcase **how QA decisions are made and communicated**, including:
+The goal is to illustrate how a QA Engineer approaches system understanding, test design, defect analysis, and selective automation within a realistic project scope, including:
 
 - Structured manual testing
 - Exploratory testing and risk discovery
@@ -16,7 +16,7 @@ The objective of this case study is to showcase **how QA decisions are made and 
 - Judicious use of test automation
 - Professional QA reporting to stakeholders
 
-> This repository represents **QA execution**, not application development.
+> The focus is on decision-making, risk evaluation, and communication — core responsibilities of modern QA and SDET roles.
 
 ## Testing Scope
 
@@ -76,8 +76,6 @@ All test cases were designed to be:
 - Traceable to observed behavior
 - Written for clarity and execution efficiency
 
----
-
 ## Defect Reporting
 
 Defects were documented with emphasis on:
@@ -86,8 +84,6 @@ Defects were documented with emphasis on:
 - Severity and user impact
 
 The intent was **actionability**, not defect volume.
-
----
 
 ## Test Automation
 
@@ -106,8 +102,6 @@ Automation scope was intentionally constrained to balance:
 
 Rationale is documented in `tests/automation/automation-scope.md`.
 
----
-
 ## Reporting & Outcomes
 
 Testing concluded with:
@@ -117,23 +111,17 @@ Testing concluded with:
 
 These artefacts demonstrate how QA outcomes are communicated to **product teams and stakeholders**.
 
----
-
 ## Notes
 
 - This repository represents **QA execution only**
 - The application under test was not authored or modified
 - All findings are based solely on observed system behavior
 
----
-
 ## Author
 
-**Mpumelelo Theophilas Nxazonke**  
-QA Engineer • SDET  
-South Africa  
-
----
+**Mpumelelo Theophilas Nxazonke**<br/> 
+QA Engineer | SDET (In Progress)<br/>
+South Africa
 
 ## License
 
